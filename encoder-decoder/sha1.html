@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility - Home page</title>
+    <link rel="stylesheet" href="../index.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script defer src="./sha1.js"></script>   
+</head>
+<body>
+    <header  class="header">
+        <nav>
+            <a href="../encoders-and-decoders.html" class="nav-home">UTILITY APP</a>
+            <a href="../encoders-and-decoders.html" class="nav-style">Encoders/Decoders</a>
+            <a href="../rgb-hex_converter.html" class="nav-style">RGB/HEX Converter</a>
+            <a href="../timestamp/timestamp.html" class="nav-style">Timestamp Converter</a>
+            <a href="../temperature/temperature.html" class="nav-style">Unit Converter</a>
+            <a href="../numberbaseconverter/baseconverter.html" class="nav-style">Number Base Converter</a>
+            <a href="../stringcount/stringcount.html" class="nav-style">Text tools/String Utilities</a>
+        </nav>       
+    </header>
+    <div class="background">
+        <div class="field">
+            <h1  style="text-align: center; margin-top: 0%;"> SHA-1 Generator </h1>   
+            <p class=font> Please enter string to generate</p> 
+            <br>
+            <br>
+            <textarea  id="inputStrings" placeholder= "Please enter the string" class="characters"></textarea>
+            <!--input type="text"  class="characters" value="" -->
+            <br>
+            <br>
+            <div class= "button_center">
+                <input type="button"  class= "button_check"  id = "generate" value="Generate" >
+            </div>
+            <br>
+            <br>
+            <textarea id="encodeResult"  class="characters"></textarea>
+        </div>
+    </div>
+</body>

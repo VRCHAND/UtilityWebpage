@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility - Home page</title>
+    <link rel="stylesheet" href="../index.css">
+    <script defer src="./url_encode_decode.js"></script>
+    
+</head>
+<body>
+    <header  class="header">
+        <nav>
+            <a href="../encoders-and-decoders.html" class="nav-home">UTILITY APP</a>
+            <a href="../encoders-and-decoders.html" class="nav-style">Encoders/Decoders</a>
+            <a href="../rgb-hex_converter.html" class="nav-style">RGB/HEX Converter</a>
+            <a href="../timestamp/timestamp.html" class="nav-style">Timestamp Converter</a>
+            <a href="../temperature/temperature.html" class="nav-style">Unit Converter</a>
+            <a href="../numberbaseconverter/baseconverter.html" class="nav-style">Number Base Converter</a>
+            <a href="../stringcount/stringcount.html" class="nav-style">Text tools/String Utilities</a>
+        </nav>       
+    </header>
+    <div class="background">
+        <div class="field">
+            <h1  style="text-align: center; margin-top: 0%;"> URL Encode and Decode </h1>   
+            <p class=font> Please enter URL which needs to be encoded or decoded</p> 
+            <br>
+            <br>
+            <textarea  id="url" placeholder= "Please enter the URl" class="characters"></textarea>
+            <!--input type="text"  class="characters" value="" -->
+            <br>
+            <br>
+            <div class= "button_center">
+                <input type="button"  class= "button_check"  id = "url_encode" value="Encode" >
+                <input type="button"  class= "button_check" id="url_decode" value="Decode" >
+            </div>
+            <br>
+            <br>
+            <textarea id="url_encode_decode_result"  class="characters"></textarea>
+        </div>
+    </div>
+    
+</body>
