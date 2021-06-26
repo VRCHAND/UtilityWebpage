@@ -260,7 +260,7 @@ a:active {
   }
 
   .displays {
-    display: block;
+    display: flex;
     font-size: 30px;
     color: black;
     text-align: left;
