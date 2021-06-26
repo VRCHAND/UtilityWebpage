@@ -5,6 +5,6 @@ function hexToRgb(hex_val){
 const rgb = document.querySelector('#rgb');
 const generate = document.querySelector('#generate');
 const hex = document.querySelector('#hex');
-generate.addEventListener('click', (event) => {
+generate.addEventListener('click', () => {
     rgb.value = hexToRgb(hex.value);
 });

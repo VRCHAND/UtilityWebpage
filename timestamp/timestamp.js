@@ -1,12 +1,12 @@
 const generate = document.querySelector('#generate');
 const generate1 = document.querySelector('#generate1');
-generate.addEventListener('click', (event) => {
+generate.addEventListener('click', () => {
     const epoch = document.querySelector('#epoch');
     const humandate = document.querySelector('#humandate');
     humandate.value = new Date(epoch.value * 1000);
 });
 
-generate1.addEventListener('click', (event) => {
+generate1.addEventListener('click', () => {
     const epoch1 = document.querySelector('#epoch1');
     const year = document.querySelector('#year');
     const month = document.querySelector('#month');

@@ -52,7 +52,7 @@
         const inputStrings = document.querySelector('#inputStrings');
         const encodeResult = document.querySelector('#encodeResult');
         
-        generate.addEventListener('click', (event) => {
+        generate.addEventListener('click', () => {
             encodeResult.value = CryptoJS.SHA256(inputStrings.value);
         });
     </script>
