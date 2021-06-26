@@ -6,29 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rgb to Hex</title>
     <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="../options.js"></script>
     <script defer src="./temperature.js"></script>
-    
 </head>
 <body>
     <header  class="header">
         <nav>
             <a href="../encoders-and-decoders.html" class="nav-home">UTILITY APP</a>
+            <a href="javascript:void(0);" class="icon displays"  >
+                <i class="fa fa-bars"  id="myFunction"></i>
+            </a>
+            <div class = "ham-nav" id="show-display">
+                <span class="close displays">&times;</span>
             <a href="../encoders-and-decoders.html" class="nav-style">Encoders/Decoders</a>
             <a href="../rgb-hex_converter.html" class="nav-style">RGB/HEX Converter</a>
             <a href="../timestamp/timestamp.html" class="nav-style">Timestamp Converter</a>
             <a href="../temperature/temperature.html" class="nav-style">Unit Converter</a>
             <a href="../numberbaseconverter/baseconverter.html" class="nav-style">Number Base Converter</a>
             <a href="../stringcount/stringcount.html" class="nav-style">Text tools/String Utilities</a>
+            </div>
         </nav>       
     </header>
     <div class="background">
-        <div  class="field", style="border-style: solid; margin-top: 0%;">
+        <div  class="field fields">
             <h1  style=" margin-top: 0%;"> Temparature Converter</h1><br><br>
             <label style=" margin-right: 30px;" for="celsius">Celsius</label>
             <input type="text"  id="celsius" style='height: 30px;'><br><br>
             <label style="margin-right: 9px;" for="fahrenheit" >Fahrenheit</label>
             <input type="text"  id="fahrenheit" style='height: 30px;'><br><br>
-            <label style="margin-right: 28px;"  for="kelvin">Kelvin</label>
+            <label style="margin-right: 32px;"  for="kelvin">Kelvin</label>
             <input type="text"  id="kelvin" style='height: 30px;' ><br><br>
         </div>
     </div>

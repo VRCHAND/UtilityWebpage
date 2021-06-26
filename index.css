@@ -1,8 +1,14 @@
 .header {
-  background-color:rgb(31, 180, 148);
+  background-color: rgb(31, 180, 148);
   background-size: cover;
   font-family: sans-serif;
-  height: 150px;
+  height: cover;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.displays {
+  display: none;
 }
 
 .nav-home {
@@ -10,6 +16,7 @@
   font-weight: 600;
   color: black;
   padding-right: 20px;
+  display: inline-flex;
 }
 
 .nav-style {
@@ -18,17 +25,17 @@
   padding-right: 20px;
   text-decoration: none;
   color: black;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .page-format {
   width: 1300px;
   border-style: solid;
   margin: 0 auto;
-  height: 410px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 
 .apps {
@@ -59,6 +66,26 @@
   text-align: center;
 }
 
+.fields {
+  border-style: solid;
+  margin-top: 0%;
+}
+
+.format1 {
+  display: block;
+  text-align: center;
+}
+
+.format2 {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  flex-wrap: wrap;
+  margin: 0% 10% 0% 10%;
+  text-align: center;
+  justify-content: center;
+}
+
 .button_check {
   display: flex;
   align-items: center;
@@ -86,6 +113,158 @@
 }
 
 .background {
-  background-color:blanchedalmond;
-  height: 1400px;
+  background-color: blanchedalmond;
+  height: 80vh;
+}
+
+.count {
+  height: 250px;
+  width: 750px;
+}
+
+.ham-nav {
+  display: inline;
+}
+
+a:hover {
+  color: rgb(11, 48, 253);
+}
+
+a:active {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    background-color: rgb(31, 180, 148);
+    background-size: cover;
+    font-family: sans-serif;
+    height: cover;
+    text-align: center;
+  }
+
+  .nav-home {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: black;
+    height: 50px;
+    padding-top: 80px;
+    display: block;
+    text-align: center;
+  }
+
+  .nav-style {
+    display: inline-flex;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+    padding-top: 60px;
+  }
+
+  .page-format {
+    width: auto;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-style: none;
+  }
+
+  .apps {
+    display: flex;
+    border-style: groove;
+    border-color: paleturquoise;
+    border-radius: 15px;
+    background-color: paleturquoise;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 10px;
+    height: 50px;
+    width: auto;
+    padding: 30px;
+    font-size: 18px;
+  }
+
+  .font {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .field {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+
+  .button_check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-right: 10px;
+  }
+
+  .characters {
+    height: 100px;
+    width: 280px;
+  }
+
+  .button_center {
+    justify-content: center;
+    display: flex;
+  }
+
+  .character {
+    height: 1rem;
+    width: 10rem;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+
+  .background {
+    background-color: blanchedalmond;
+    height: auto;
+    min-height: 80vh;
+    border-style: none;
+  }
+
+  .format2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .count {
+    height: 150px;
+    width: 330px;
+  }
+
+  .ham-nav {
+    display: none;
+  }
+
+  .fields {
+    border-style: none;
+  }
+
+  .displays {
+    display: block;
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    padding-left: 2px;
+  }
+
+  .close {
+    float: right;
+    font-size: 45px;
+    font-weight: bold;
+  }
 }
