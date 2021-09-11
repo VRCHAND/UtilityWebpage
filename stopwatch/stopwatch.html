@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rgb to Hex</title>
+    <title>Stop Watch</title>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script defer src="../options.js"></script>
-    <script defer src="./baseconverter.js"></script>
-    
+    <script defer src="./stopwatch.js"></script>
 </head>
 <body>
     <header  class="header">
@@ -26,21 +24,25 @@
                 <li class="nav-style"><a href="../temperature/temperature.html">Unit Converter</a></li>
                 <li class="nav-style"><a href="../numberbaseconverter/baseconverter.html">Number Base Converter</a></li>
                 <li class="nav-style"><a href="../stringcount/stringcount.html">Text tools/String Utilities</a></li>
-                <li class="nav-style"><a href="../stopwatch/stopwatch.html">Stop Watch</a></li>
+                <li class="nav-style"><a href="../stopwatch/stopwatch.html">Stop watch</a></li>
             </div>
         </nav>       
     </header>
     <div class="background">
         <div  class="field fields">
-            <h1  style=" margin-top: 0%;"> Base converter</h1><br><br>
-            <label style="margin-right: 5px;" for="decimal">Decimal</label>
-            <input type="text" style="margin-left: 5px; height: 30px;"  id="decimal" style='height: 30px;'><br><br>
-            <label style="margin-right: 20px;" for="binary" >Binary</label>
-            <input type="text"  id="binary" style='height: 30px;'><br><br>
-            <label  style="margin-right: 30px;" for="hex">HEX</label>
-            <input type="text"  id="hex" style='height: 30px;' ><br><br>
-            <label style="margin-right: 30px;"  for="oct">OCT</label>
-            <input type="text"  id="oct" style='height: 30px;' ><br><br>
+            <h1  style=" margin-top: 0%;"> Stop watch</h1>
+            <label style="height: 190px; margin-bottom: 60px;" for="counter">Counter</label>
+            <input type="text"  id="counter"  style="margin-top: 30px;" ><br><br>
+            <!--input type="text"  class="characters" value="" -->
+            <div class= "button_center">
+                <input type="button"  class= "button_check"  id = "start" value="start" >
+                <input type="button"  class= "button_check"  id = "stop" value="stop" >
+            </div><br>
+            <label style="height: 90px; margin-right: 15px;" for="timer">Timer</label>
+            <input type="text"  id="timer"><br><br>
+            <div class= "button_center">
+            <input type="button"  class= "button_check"  id = "starts" value="start" >
+            </div>
         </div>
     </div>
 </body>

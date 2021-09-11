@@ -1,11 +1,14 @@
 const generate = document.querySelector('#generate');
 const generate1 = document.querySelector('#generate1');
+const clock = document.querySelector('#clock');
+setInterval(() => {
+    clock.value = Math.round(Date.now() / 1000);
+}, 1000);
 generate.addEventListener('click', () => {
     const epoch = document.querySelector('#epoch');
     const humandate = document.querySelector('#humandate');
     humandate.value = new Date(epoch.value * 1000);
 });
-
 generate1.addEventListener('click', () => {
     const epoch1 = document.querySelector('#epoch1');
     const year = document.querySelector('#year');

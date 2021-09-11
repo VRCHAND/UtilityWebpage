@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="../options.js"></script>
     <script defer src="./timestamp.js"></script>
+    
 </head>
 <body>
     <header  class="header">
@@ -25,6 +26,7 @@
              <li class="nav-style"><a href="../temperature/temperature.html">Unit Converter</a></li>
              <li class="nav-style"><a href="../numberbaseconverter/baseconverter.html">Number Base Converter</a></li>
              <li class="nav-style"><a href="../stringcount/stringcount.html">Text tools/String Utilities</a></li>
+             <li class="nav-style"><a href="../stopwatch/stopwatch.html">Stop Watch</a></li>
             </div>
         </nav>       
     </header>
@@ -32,8 +34,10 @@
         <div class="field fields" >
             <div>
                 <h1  style="margin: 0%;"> Epoch to Human date</h1>
+                <label for="epoch" >The current unix epoch time</label>
+                <input type="text"  id ="clock" style="margin-top: 30px;" ></input><br><br>
                 <label for="epoch" >Epoch Value</label>
-                <input type="text"  id="epoch"  style="margin-top: 30px;" placeholder = "1622292159" ><br><br>
+                <input type="text"  id="epoch"  style="margin-top: 30px;" ><br><br>
                 <!--input type="text"  class="characters" value="" -->
                 <div class= "button_center">
                     <input type="button"  class= "button_check"  id = "generate" value="Generate" >
